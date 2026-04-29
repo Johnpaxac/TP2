@@ -1,4 +1,4 @@
-function BalanceSummary({ balance, ingresos, gastos, limiteGastos, excedeLimite, onLimiteChange, formatearMoneda }) {
+export function BalanceSummary({ balance, ingresos, gastos, limiteGastos, excedeLimite, onLimiteChange, formatearMoneda }) {
     return (
         <section className={`balance-card ${excedeLimite ? 'alerta' : ''}`} aria-live="polite">
             <p className="balance-label">Balance actual</p>

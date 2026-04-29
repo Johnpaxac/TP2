@@ -1,4 +1,4 @@
-function TransactionItem({ movimiento, formatearMoneda, onEdit, onDelete }) {
+export function TransactionItem({ movimiento, formatearMoneda, onEdit, onDelete }) {
     return (
         <li className={movimiento.tipo === 'ingreso' ? 'ingreso' : 'gasto'}>
             <div>

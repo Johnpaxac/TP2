@@ -1,4 +1,4 @@
-function TransactionList({ movimientos, formatearMoneda, onEdit, onDelete }) {
+export function TransactionList({ movimientos, formatearMoneda, onEdit, onDelete }) {
     return (
         <section className="movimientos-panel">
             <h3>Ultimos movimientos</h3>

@@ -1,4 +1,4 @@
-function TransactionForm({
+export function TransactionForm({
     descripcion,
     monto,
     tipo,

@@ -1,6 +1,10 @@
 import { useMemo, useState } from 'react'
 import './App.css'
 
+import {BalanceSummary} from './BalanceSummary'
+import {TransactionForm} from './TransactionForm'
+import {TransactionList} from './TransactionList'
+
 function Header({ mostrarFormulario, onToggleFormulario }) {
     return (
         <header className="encabezado">
