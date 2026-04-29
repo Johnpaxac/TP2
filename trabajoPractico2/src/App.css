@@ -31,7 +31,7 @@
 
 .toggle-form {
 	border: none;
-	background: linear-gradient(135deg, #0b5660, #1f7a8c);
+	background: #0f7a8c;
 	color: #f4fcfe;
 	border-radius: 999px;
 	padding: 0.7rem 1.2rem;
@@ -39,17 +39,11 @@
 	font-size: 0.92rem;
 	cursor: pointer;
 	box-shadow: 0 8px 18px rgba(22, 93, 109, 0.25);
-	transition: transform 180ms ease, box-shadow 180ms ease;
-}
-
-.toggle-form:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 14px 25px rgba(22, 93, 109, 0.28);
 }
 
 .balance-card {
 	margin-top: 1.8rem;
-	background: linear-gradient(135deg, #133746, #0f2934 70%);
+	background: #0f2934;
 	color: #edf9fc;
 	border-radius: 20px;
 	padding: 1.5rem;
@@ -59,8 +53,8 @@
 }
 
 .balance-card.alerta {
-	background: linear-gradient(135deg, #5d1f28, #341017 70%);
-	box-shadow: 0 16px 32px rgba(93, 31, 40, 0.3);
+	background: #5d1f28;
+	box-shadow: 0 16px 32px rgba(93, 31, 40, 0.2);
 }
 
 .balance-card::after {
@@ -69,7 +63,7 @@
 	width: 180px;
 	height: 180px;
 	border-radius: 50%;
-	background: radial-gradient(circle, rgba(244, 190, 117, 0.55), rgba(244, 190, 117, 0));
+	background: none;
 	top: -60px;
 	right: -40px;
 }
@@ -139,6 +133,17 @@
 	color: rgba(236, 249, 252, 0.65);
 }
 
+/* Ocultar controles de incremento (spin buttons) sólo para el input de límite */
+.limite-box input::-webkit-outer-spin-button,
+.limite-box input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+.limite-box input {
+	appearance: textfield;
+	-moz-appearance: textfield;
+}
+
 .alerta-texto {
 	margin: 0;
 	font-weight: 800;
@@ -151,7 +156,6 @@
 	border: 1px solid #d6e7ee;
 	border-radius: 16px;
 	padding: 1rem;
-	animation: reveal 260ms ease;
 }
 
 .panel-formulario form {
@@ -274,23 +278,13 @@
 }
 
 .movimientos-panel li.ingreso {
-	border-left: 5px solid #1a8a6a;
+	background: #e8f5e9;
+	border: 1px solid #c8e6c9;
 }
 
 .movimientos-panel li.gasto {
-	border-left: 5px solid #c5553d;
-}
-
-@keyframes reveal {
-	from {
-		opacity: 0;
-		transform: translateY(-6px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+	background: #ffebee;
+	border: 1px solid #ef9a9a;
 }
 
 @media (max-width: 700px) {
