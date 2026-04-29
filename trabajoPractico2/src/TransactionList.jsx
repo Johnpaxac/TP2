@@ -1,3 +1,5 @@
+import { TransactionItem } from "./TransactionItem"
+
 export function TransactionList({ movimientos, formatearMoneda, onEdit, onDelete }) {
     return (
         <section className="movimientos-panel">
